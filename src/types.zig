@@ -1,4 +1,6 @@
-//! Type definitions for howl-render-vulkan.
+//! Responsibility: define Vulkan backend types and state contracts.
+//! Ownership: BackendConfig, BackendState, ExecuteError types and their semantics.
+//! Reason: provide a minimal type contract between render-core and the Vulkan renderer implementation.
 
 const render_core = @import("howl_render_core");
 

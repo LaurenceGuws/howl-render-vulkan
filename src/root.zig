@@ -1,6 +1,6 @@
-//! Responsibility: Vulkan backend scaffold.
-//! Ownership: Vulkan device/resource execution only.
-//! Reason: keep render policy out of backend-specific code.
+//! Responsibility: Vulkan backend implementation and public API.
+//! Ownership: Vulkan command recording, state management, and type publishing.
+//! Reason: provide a GPU-accelerated backend that consumes render-core contracts while encapsulating Vulkan-specific queue and synchronization boundaries.
 
 const types = @import("types.zig");
 const execution = @import("execution.zig");
