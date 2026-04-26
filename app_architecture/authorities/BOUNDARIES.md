@@ -1,12 +1,13 @@
-# Boundary Authority
+# Howl Render Vulkan Boundary Authority
 
 ## Hard Boundaries
 
-- Expose host-neutral/public module APIs only.
-- Keep implementation details internal.
-- No cross-repo internal imports.
+- Consume render-core public API only.
+- Own Vulkan execution details only.
+- Import no host toolkit, session, or surface runtime internals.
 
 ## Forbidden Coupling
 
-- No hidden coupling to sibling module internals.
-- No platform/framework leakage across module boundary unless module is platform-owned.
+- No frame-to-plan interpretation logic.
+- No atlas or batching policy ownership.
+- No host event, window, or platform-app logic in backend code.

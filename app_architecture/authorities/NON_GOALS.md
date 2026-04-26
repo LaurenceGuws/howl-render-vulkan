@@ -1,5 +1,6 @@
-# Non-Goals Authority
+# Howl Render Vulkan Non-Goals Authority
 
-- Owning sibling module responsibilities.
-- Owning parent workspace policy.
-- Adding compatibility/fallback/workaround shim paths.
+- Owning renderer-family policy that should live in render-core.
+- Owning host event loops or platform integration.
+- Owning session, surface, or terminal semantics.
+- Adding compatibility, fallback, or workaround paths.

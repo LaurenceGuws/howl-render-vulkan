@@ -1,25 +1,11 @@
-# Active Queue
+# Howl Render Vulkan Active Queue
+
+No engineer execution queue is published.
 
 ## Current State
 
-M0 scaffold queue open.
-
-## Tickets
-
-| Ticket | Status | Intent |
-| --- | --- | --- |
-| `M0-A1` | pending | Define contract baseline for module API. |
-| `M0-A2` | pending | Implement minimal compile-safe scaffold. |
-| `M0-A3` | pending | Add baseline tests and close queue. |
+Renderer-lane architecture reset is in progress. Do not execute implementation work until architect republishes the Vulkan queue against the reset model.
 
 ## Guardrail
 
-- One ticket per commit.
-- Mandatory validation per ticket:
-  - zig build
-  - zig build test
-
-## TH (Test Hygiene) Closeout
-
-**Phase complete.** Package-context test authority: `zig build test` (1 test passing). Known intentional limits: API surface checks only, GPU rendering tests and platform-specific integration testing deferred.
-
+Do not start implementation work until architect publishes a bounded queue.
